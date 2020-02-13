@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>   
+        <title> Curso Javascript completo</title>
+        <meta charset="utf-8">
+        
+        <script>
+          var x = 0;
+          var y;
+
+          function monstrax(){
+          var x = 10;
+          var y = 20;
+          console.log("monstra x dentro:", x);
+          console.log("monstra y dentro:", y);
+          }
+          monstrax()
+          console.log("monstra x fora: ", x);
+          console.log("monstra y fora: ", y);
+
+          //IFEE
+          (function(){
+            'use strict';
+            var isValid = false;
+
+            function somar(){
+              console.log(arguments);
+              var result = 0;
+              var x = 0;
+
+              while(arguments[x]){
+                    result += arguments[x];
+                    x++;
+              }
+               console.log('result:', result);
+              }
+         
+            somar(20, 20, 10, 50, 20, 40, 10, 5, 5, 20, 70, 10, 15);
+          })()
+
+          console.log(isValid);
+
+
+        </script>
+        
+        
+    </head>
+    <body>
+        <h1>Curso Javascript completo<h1>
+
+    </body>
+
+</html>
