@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+   <head>   
+        <title> Curso Javascript completo</title>
+        <meta charset="utf-8">     
+    </head>
+
+    <body>
+        <div class="container">
+              <h1>Curso Javascript completo<h1>
+
+               <button id="btn1" onclick="clicar()"> Botao 1</button>
+               <button id="btn2"> Botao 2</button> 
+               <button id="btn3"> Botao 3</button>               
+
+        </div>
+
+         <script>
+           
+            var btn2 = document.getElementById('btn2');
+            var btn3 = document.getElementById('btn3');
+
+            btn2.onclick = clicar;
+
+            function clicar(){
+                alert('clicou');
+            }
+
+            btn3.addEventListener("click", function(){
+              alert('clicou DOM lvl 2 ');
+            })
+        </script>
+    </body>
+
+</html>
+
+
+
