@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>   
+        <title> Curso Javascript completo</title>
+        <meta charset="utf-8">
+        
+     
+    </head>
+    <body>
+        <h1>Curso Javascript completo<h1>
+
+
+        <script>
+
+          function Caneta(preco, cor){
+
+            var color = cor ||'black';
+            this.preco = preco || 1;  
+
+            this.mudarCor = function(cor){
+                if(cor !== 'red' && cor !== 'blue' && cor !== 'black'){
+                    return;
+                }
+                color = cor;
+            }
+          }
+          this.pegaCor = function(){
+            return color;
+          }
+
+          var caneta1 = new Caneta(2,'red');
+
+        </script>
+
+    </body>
+
+</html>

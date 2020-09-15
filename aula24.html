@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+   <head>   
+        <title> Curso Javascript completo</title>
+        <meta charset="utf-8">     
+    </head>
+
+    <body>
+        <div class="container">
+              <h1>Curso Javascript completo<h1>
+
+               <button id="btn1" onclick="clicar()"> Botao 1</button>
+               <button id="btn2"> Botao 2</button> 
+               <button id="btn3"> Botao 3</button>               
+
+        </div>
+
+        <div class="container">
+          <h1>propagação de eventos</h1>
+          <div id="d1"  style="background: red; padding: 25px;">
+            Texto dentro da div
+            <span id="d1Span" style="background: yellow;">Texto dentro da span</span>
+          </div>
+        </div>
+
+         <script>
+           
+            var btn2 = document.getElementById('btn2');
+            var btn3 = document.getElementById('btn3');
+
+            btn2.onclick = clicar;
+
+            function clicar(){
+                alert('clicou');
+            }
+
+            btn3.addEventListener("click", function(){
+              alert('clicou DOM lvl 2 ');
+            })
+
+            var $d1 = document.querySelector('#d1');
+            var $d1Span = document.querySelector('#d1 span');
+
+            $d1,addEventListener('click', function (){
+              console.log('click no $d1');
+            });
+            $d1Span,addEventListener('click', function (){
+              console.log('click no $d1Span');
+            });
+        </script>
+    </body>
+
+</html>
+
+
+
